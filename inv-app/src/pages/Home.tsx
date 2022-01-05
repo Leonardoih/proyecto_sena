@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-    return (
-        <div>
-            Hola Pagina Principal!!!
-        </div>
-    )
-}
+  const navigate = useNavigate();
 
-export default Home
+  const handleClick = () => {
+    navigate("Dashboar");
+  };
+  return (
+    <div>
+      <h1>Hola Pagina Principal!!!</h1>
+      <br />
+      <button onClick={handleClick}>Dashboar</button>
+    </div>
+  );
+};
+
+export default Home;

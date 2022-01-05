@@ -1,21 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import "bootstrap/dist/css/bootstrap.min.css"
-import Home from './pages/Home'
-import Dashboar from './pages/Dashboar';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home";
+import Dashboar from "./pages/Dashboar";
 
 ReactDOM.render(
   <BrowserRouter>
-  <Routes>
-    <Route path="/" element={<Home />}/>
-    <Route path="/Dashboar" element={<Dashboar />}/>
+    <Routes>
+      <Route path="/" element={<Home />} />
 
-  </Routes>
+      <Route path="/dashboar" element={<Dashboar />} />
+    </Routes>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
