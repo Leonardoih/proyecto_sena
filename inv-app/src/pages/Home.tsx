@@ -9,7 +9,7 @@ const Home = () => {
   };
   return (
     <div>
-      <h1>Hola Pagina Principal!!!</h1>
+      <h1><p>Hola Pagina Principal!!!</p></h1>
       <br />
       <button onClick={handleClick}>Dashboar</button>
     </div>

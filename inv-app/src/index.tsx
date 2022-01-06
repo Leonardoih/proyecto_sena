@@ -1,20 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import Dashboar from "./pages/Dashboar";
+import  "./index.css";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-
-      <Route path="/dashboar" element={<Dashboar />} />
-    </Routes>
-  </BrowserRouter>,
+  <div className="container">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboar" element={<Dashboar />} />
+      </Routes>
+    </BrowserRouter>
+  </div>,
   document.getElementById("root")
 );
 
