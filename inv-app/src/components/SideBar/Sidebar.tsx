@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Sidebar.css"
 
 const Sidebar = () => {
   return (
     <div
-      className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
+      className="sidebar"
       style={{ width: "280px", height: "700px" }}
     >
       <Link

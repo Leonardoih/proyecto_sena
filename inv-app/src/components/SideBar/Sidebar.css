@@ -1,0 +1,8 @@
+.sidebar{
+    position: absolute;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(55, 60, 131, 0.267);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
