@@ -1,11 +1,23 @@
-body {  
+body {
   min-height: 100vh;
-  background:
-  linear-gradient(rgba(5,7,12,0.75),rgba(5, 19, 56, 0.75)),
-   url(./images/bg1.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 19, 56, 0.75)),
+    url(./images/bg1.jpg) no-repeat center center fixed;
   background-size: cover;
-  
 }
-p{
+p {
   color: #f3f3f3;
 }
+
+h1,
+h2,
+h3 {
+  color: #f3f3f3;
+}
+
+nav {
+  background: rgba(5, 7, 12, 0.40);
+  
+ 
+}
+
+
