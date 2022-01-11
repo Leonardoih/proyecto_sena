@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Pages/Home";
 import Dashboar from "./Pages/Dashboar";
-import  "./index.css";
+import "./index.css";
 import Report from "./components/Report/Report";
 
 ReactDOM.render(
@@ -13,8 +13,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/dashboar/*" element={<Dashboar />} >
-          <Route path="Report" element={<Report/>}></Route>
+        <Route path="/dashboar/*" element={<Dashboar />}>
+          <Route path="Report" element={<Report />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
