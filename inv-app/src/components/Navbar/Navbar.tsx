@@ -7,20 +7,27 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <Link id="op0" to="/dashboar/report">Navbar</Link>
+            <Link id="op0" to="/dashboar/report">
+              Navbar
+            </Link>
           </li>
           <li>
-            <Link id="op1" to="/dashboar">Home</Link>
+            <Link id="op1" to="/dashboar">
+              Home
+            </Link>
           </li>
           <li>
-            <Link id="op2" to="#">Link </Link>
+            <Link id="op2" to="#">
+              Link{" "}
+            </Link>
           </li>
-          <li className="linkr" >
-            <Link id="op3" to="#">Dropdown</Link>
+          <li className="linkr">
+            <Link id="op3" to="#">
+              Dropdown
+            </Link>
           </li>
         </ul>
       </nav>
-      
     </div>
   );
 };

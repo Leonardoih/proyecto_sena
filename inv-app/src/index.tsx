@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Dashboar from "./Pages/Dashboar";
 import "./index.css";
 import Report from "./components/Report/Report";
+import "./Main.js";
 
 ReactDOM.render(
   <div>
