@@ -11,11 +11,9 @@
   gap: 1.6em;
   grid-template-columns: repeat(5, 1fr);
   place-content: center;
- 
 }
 
 .container > .navbar,
-.container > .title,
 .container > .sidebar,
 .container > .content,
 .container > .Footer {
@@ -36,11 +34,11 @@
 }
 
 .container > .sidebar {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .container > .content {
-  grid-column: span 3;
+  grid-column: span 4;
 }
 
 .navbar2 ul {
@@ -59,16 +57,13 @@ nav ul li a {
   font-size: 18px;
   font-family: "Asap", Arial, Helvetica, sans-serif !important;
 }
-nav ul li a:hover, a:active {
+nav ul li a:hover {
   color: #05afc0;
   border-bottom: 3px solid #05aebf;
   cursor: pointer;
   font-size: 18px;
 }
-nav > ul > li > a:target{
-  background:black;
-}
-.navbar2  ul  li  a.seleccionado {
+.navbar2 ul li a.seleccionado {
   color: #05afc0;
   border-bottom: 3px solid #05aebf;
   cursor: pointer;
@@ -77,15 +72,36 @@ nav > ul > li > a:target{
 }
 .linkr {
   position: absolute;
-   right: 5px;
-  
+  right: 25px;
+}
+.sidebar {
+  height: 70vh;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li a {
+  color: #585e61;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Asap", Arial, Helvetica, sans-serif !important;
+}
+.sidebar ul li {
+  margin-top: 60px;
+}
+.sidebar ul li a:hover {
+  color: #05afc0;
+  border-bottom: 3px solid #05aebf;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.logo {
-  margin-left: 262px;
-  width: 463px;
-  height: 89px !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sidebar ul li a.seleccionado {
+  color: #05afc0;
+  border-bottom: 3px solid #05aebf;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
 }
