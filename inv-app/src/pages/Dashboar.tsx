@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/SideBar/Sidebar";
 import Report from "../components/Report/Report";
 import Footer from "../components/Footer/Footer";
-import Logo from "../components/Images/logo.jpg";
 
 const Dashboar = () => {
   return (
