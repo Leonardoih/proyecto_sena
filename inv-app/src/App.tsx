@@ -6,6 +6,7 @@ import Laptop from "./Pages/Laptop";
 import Desktop from "./Pages/Desktop";
 import Otros from "./Pages/Otros";
 import ControlPanel from "./Pages/ControlPanel";
+import  './Main.js'
 
 const App = () => {
   return (

@@ -5,6 +5,7 @@
 body {
   font-family: "Asap", Arial, Helvetica, sans-serif;
   font-size:18px;
+  color: #585e61;
 }
 
 .container {
@@ -40,6 +41,7 @@ body {
     padding: 50px ;
   } a {
     text-decoration: none;
+    color: #585e61;
   }
   a:hover {
     color: #05afc0;
@@ -52,4 +54,11 @@ body {
     font-size: 18px;
     border-bottom: 3px solid #05aebf;
   }
+}
+.sidebar ul li a.seleccionado {
+  color: #05afc0;
+  border-bottom: 3px solid #05aebf;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
 }
