@@ -1,30 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./Pages/Home";
-import Dashboar from "./Pages/Dashboar";
-import Report from "./components/Report/Report";
-import Inventario from "./components/Inventario/Inventario";
-import Laptop from "./components/CompSidebar/Laptop";
-import "./index.css";
-import "./Main.js";
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import "./index.css";
+//import "./Main.js";
+import App from './App'
 
 ReactDOM.render(
-  <div>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="Dashboar/*" element={<Dashboar />}>
-          <Route path="Inventario" element={<Inventario />}>
-            <Route path="Laptop" element={<Laptop />}></Route>
-          </Route>
-          <Route path="Report" element={<Report />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </div>,
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>,
+ 
   document.getElementById("root")
 );
 

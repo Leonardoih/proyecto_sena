@@ -1,21 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div >
       <ul>
         <li>
-          <Link to="laptop">Laptop</Link>
+          <Link to="/Laptop">Laptop</Link>
         </li>
         <li>
-          <Link to="desktop">Desktop</Link>
+          <Link to="/Desktop">Desktop</Link>
         </li>
         <li>
-          <Link to="otros">Otros</Link>
+          <Link to="/Otros">Otros</Link>
         </li>
         <li>
-          <Link to="panel">Control Panel</Link>
+          <Link to="/ControlPanel">Control Panel</Link>
         </li>
       </ul>
       <br />
