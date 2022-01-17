@@ -2,7 +2,7 @@ import React from 'react'
 
 const Otros = () => {
     return (
-        <div>
+        <div className="control">
             <h1>Otros</h1>
         </div>
     )

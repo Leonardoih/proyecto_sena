@@ -1,20 +1,35 @@
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.scss";
+import Navbar from "./components/Navbar";
 import ReactDOM from "react-dom";
-import reportWebVitals from "./reportWebVitals";
-//import "bootstrap/dist/css/bootstrap.min.css";
-//import "./index.css";
-//import "./Main.js";
-import App from './App'
+import Home from "./Routes/Home";
+import Reportes from "./Routes/Reportes";
+import Sesion from "./Routes/Sesion";
+import Inventario from "./Routes/Inventario";
+import Laptop from "./components/Laptop";
+import Desktop from "./components/Desktop";
+import Otros from "./components/Otros";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App/>
-  </React.StrictMode>,
- 
+  <BrowserRouter>
+    <div className="container">
+      <div className="navbar">
+        <Navbar></Navbar>
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route index element={<Home />} />
+        <Route path="Reportes" element={<Reportes />}></Route>
+        <Route path="Sesion" element={<Sesion />}></Route>
+        <Route path="Inventario/*" element={<Inventario />}>
+            <Route index element={<Laptop />}></Route>
+            <Route path="Laptop" element={<Laptop />} />
+            <Route path="Desktop" element={<Desktop />} />
+            <Route path="Otros" element={<Otros />} />
+          </Route>
+      </Routes>
+    </div>
+  </BrowserRouter>,
+
   document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
