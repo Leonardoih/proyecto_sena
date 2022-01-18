@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom";
-import  Logo  from '../Img/logo.png';
+
+
 
 
 
 
 const Navbar = () => {
   return (
-    <div>
-      <div>
-        <img src={Logo} alt="" />
+    <div className="navbar">
+      <div >
+        <img src={require(`../images/Logo6.png`)} alt="logo" />
       </div>
       <ul>
         <li>

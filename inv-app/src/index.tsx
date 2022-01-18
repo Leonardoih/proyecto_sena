@@ -13,7 +13,7 @@ import Otros from "./components/Otros";
 ReactDOM.render(
   <BrowserRouter>
     <div className="container">
-      <div className="navbar">
+      <div >
         <Navbar></Navbar>
       </div>
       <Routes>
