@@ -1,10 +1,13 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import "./Sidebar.scss";
 
-const Inventario = () => {
+
+
+const Sidebar = () => {
   return (
-    <div id="inventario" >
-      <div >
+    <div >
+      <div className="sidebar">
         <ul>
           <li>
             <NavLink to="Laptop">Laptop</NavLink>
@@ -24,4 +27,4 @@ const Inventario = () => {
   );
 };
 
-export default Inventario;
+export default Sidebar;

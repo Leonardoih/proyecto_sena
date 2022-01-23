@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container_header{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap : 1em;
+}
+.header{
+  grid-column: span 5;
+  background: rgb(94, 92, 192);
+}
+
+.navbar {
+  grid-column: 1/6;
+
+ 
+
+  ul {
+    display: flex;
+  }
+  li {
+    margin: 50px;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
