@@ -24,33 +24,37 @@ body {
   height: 89px;
 }
 
-.navbar {
+.menu {
   background: #fff;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ul {
+  .menu_items {
     display: flex;
+    list-style: none;
+    margin-right: 30px;
   }
 
-  li {
-    margin: 25px;
-    margin-right: 30px;
-    list-style: none;
+  .menu_items li {
+    margin: 0 5px;
+    border-radius: 3px;
   }
-  a {
+  .menu_items li a {
+    padding: 7px 13px;
     color: #585e61 !important;
     text-decoration: none;
+    font-size: 18px;
     display: block;
   }
-  a:hover {
+
+  .menu_items li a:hover {
     color: #05aebf !important;
     font-family: "Asap", Arial, Helvetica, sans-serif !important;
     font-size: 18px !important;
     border-bottom: 3px solid #05aebf !important;
   }
-  .active {
+  .menu_items li  .active {
     font-weight: bold !important;
     color: #05aebf !important;
     font-family: "Asap", Arial, Helvetica, sans-serif !important;
@@ -64,8 +68,70 @@ body {
   padding: 0 25px;
   font-weight: bold;
 }
-.btn-menu {
-  margin-right: 30px;
+.btn_menu {
+  padding-right: 60px;
   cursor: pointer;
   display: none;
+}
+
+ul.show {
+  top: 65px;
+}
+
+@media screen and (max-width: 952px) {
+  .invApp {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+  .menu_items li a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 858px) {
+  .menu {
+    height: 65px;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+  .menu_items {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+  }
+  .menu_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .menu_items li:hover {
+    background: none;
+  }
+  .menu_items li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .menu_items li a:hover {
+    font-size: 20px;
+    color: #05aebf;
+    font-weight: bold;
+  }
+  .invApp {
+    font-size: 25px;
+    padding-left: 35px;
+  }
+}
+@media screen and (max-width: 858px) and (orientation: landscape) {
+ .menu_items li {
+     margin: 5px 0 0 0;
+ }    
+    .menu_items {
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
 }

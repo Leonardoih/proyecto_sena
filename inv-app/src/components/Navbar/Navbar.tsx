@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+
 const Navbar = () => {
   return (
     <div className="containerNav">
-      <nav className="navbar">
+      <nav className="menu">
         <label className="invApp">Inv - App</label>
-        <ul>
+        
+        <ul className="menu_items">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -20,11 +21,6 @@ const Navbar = () => {
             <NavLink to="/Login">Login</NavLink>
           </li>
         </ul>
-        <span className="btn-menu">
-          <i>
-            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-          </i>
-        </span>
       </nav>
     </div>
   );
