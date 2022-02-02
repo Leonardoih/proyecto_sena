@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Desktop = () => {
-    return (
-        <div className="control">
-            <h1>Desktop</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>Desktop</h1>
+    </div>
+  );
+};
 
-export default Desktop
+export default Desktop;

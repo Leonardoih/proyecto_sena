@@ -1,0 +1,27 @@
+.container_inv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "sidebar  control  control control control"
+    "sidebar  control  control control control"
+    "sidebar  control  control control control";
+  gap: 0.5em;
+  height: 70vh;
+  margin: 5%;
+}
+
+.container_inv .sidebar {
+  padding: 3%;
+  grid-area: sidebar;
+  background: rgb(189, 187, 214);
+  border-radius:5px
+}
+li {
+    list-style: none;
+}
+.container_inv .control {
+    grid-area: control;
+    background: rgb(118, 190, 190);
+    border-radius:5px
+}

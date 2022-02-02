@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Otros = () => {
-    return (
-        <div className="control">
-            <h1>Otros</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>Otros</h1>
+    </div>
+  );
+};
 
-export default Otros
+export default Otros;
