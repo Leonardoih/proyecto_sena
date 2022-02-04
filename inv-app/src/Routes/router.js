@@ -18,6 +18,7 @@ const router = () => {
             <Route path="Laptop" element={<Laptop />} />
             <Route path="Desktop" element={<Desktop />} />
             <Route path="Otros" element={<Otros />} />
+            
           </Route>
           <Route path="Reportes" element={<Reportes />}></Route>
           <Route path="Login" element={<Login />}></Route>

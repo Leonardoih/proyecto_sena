@@ -8,7 +8,7 @@ const Inventario = () => {
       <div><Navbar></Navbar></div>
       <div className="container_inv" >
       <div className="sidebar">
-        <ul>
+        <ul className="menu_inv">
           <li>
             <NavLink to="Laptop">Laptop</NavLink>
           </li>

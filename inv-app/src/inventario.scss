@@ -33,7 +33,33 @@ li {
   list-style: none;
   margin: 5em;
 }
+a {
+  color: #585e61 !important;
+  text-decoration: none;
+}
+a:hover {
+  color: #05aebf !important;
+  font-family: "Asap", Arial, Helvetica, sans-serif !important;
+  font-size: 22px !important;
+  border-bottom: 3px solid #05aebf !important;
+}
 
+.menu_inv li .active {
+  font-weight: bold !important;
+  color: #05aebf !important;
+  font-family: "Asap", Arial, Helvetica, sans-serif !important;
+  font-size: 22px !important;
+  border-bottom: 3px solid #05aebf !important;
+}
+
+li:enabled{
+  font-weight: bold !important;
+  color: #5a7577 !important;
+  font-family: "Asap", Arial, Helvetica, sans-serif !important;
+  font-size: 22px !important;
+  border-bottom: 3px solid #05aebf !important;
+
+}
 .container_inv .control {
   grid-area: control;
   backdrop-filter: blur(20px);
@@ -43,6 +69,5 @@ li {
   box-shadow: var(--box-shadow);
 }
 .control {
-  padding:5%;
-
+  padding: 5%;
 }
