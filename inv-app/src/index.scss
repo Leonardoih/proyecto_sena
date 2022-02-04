@@ -6,10 +6,27 @@
   outline: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg-white: rgba(255, 255, 255, 0.3);
+  --br: 5px;
+  --border: solid 1px rgba(255, 255, 255, 0.5);
+  --box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.05);
+}
 body {
   font-family: "Asap", Arial, Helvetica, sans-serif !important;
   font-weight: normal !important;
   font-size: 18px !important;
+  background: #076585; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fff,
+    #076585
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fff,
+    #076585
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container_header {
@@ -25,19 +42,26 @@ body {
 }
 
 .menu {
-  background: #fff;
-  width: 100vw;
+  margin-top: 1%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding: 1em;
+  backdrop-filter: blur(20px);
+  background-color: var(--bg-white);
+  border-radius: var(--br);
+  border: var(--border);
+  box-shadow: var(--box-shadow);  
   display: flex;
   align-items: center;
   justify-content: space-between;
   .menu_items {
     display: flex;
     list-style: none;
-    margin-right: 30px;
+    margin-right: 5em;
   }
 
   .menu_items li {
-    margin: 0 5px;
+    margin: 0 50px;
     border-radius: 3px;
   }
   .menu_items li a {
@@ -54,7 +78,7 @@ body {
     font-size: 18px !important;
     border-bottom: 3px solid #05aebf !important;
   }
-  .menu_items li  .active {
+  .menu_items li .active {
     font-weight: bold !important;
     color: #05aebf !important;
     font-family: "Asap", Arial, Helvetica, sans-serif !important;
@@ -127,11 +151,11 @@ ul.show {
   }
 }
 @media screen and (max-width: 858px) and (orientation: landscape) {
- .menu_items li {
-     margin: 5px 0 0 0;
- }    
-    .menu_items {
-        overflow: scroll;
-        height: calc(100% - 65px);
-    }
+  .menu_items li {
+    margin: 5px 0 0 0;
+  }
+  .menu_items {
+    overflow: scroll;
+    height: calc(100% - 65px);
+  }
 }

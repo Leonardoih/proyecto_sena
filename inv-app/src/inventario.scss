@@ -1,3 +1,10 @@
+:root {
+  --bg-white: rgba(255, 255, 255, 0.3);
+  --br: 5px;
+  --border: solid 1px rgba(255, 255, 255, 0.5);
+  --box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
 .container_inv {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -8,20 +15,34 @@
     "sidebar  control  control control control";
   gap: 0.5em;
   height: 70vh;
-  margin: 5%;
+  margin-top: 1%;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .container_inv .sidebar {
-  padding: 3%;
   grid-area: sidebar;
-  background: rgb(189, 187, 214);
-  border-radius:5px
+  font-size: 22px;
+  backdrop-filter: blur(20px);
+  background-color: var(--bg-white);
+  border-radius: var(--br);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
 }
 li {
-    list-style: none;
+  list-style: none;
+  margin: 5em;
 }
+
 .container_inv .control {
-    grid-area: control;
-    background: rgb(118, 190, 190);
-    border-radius:5px
+  grid-area: control;
+  backdrop-filter: blur(20px);
+  background-color: var(--bg-white);
+  border-radius: var(--br);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+}
+.control {
+  padding:5%;
+
 }
