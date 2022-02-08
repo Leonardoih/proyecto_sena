@@ -1,8 +1,10 @@
 import ReactDOM from "react-dom";
+//import "bootstrap/dist/css/bootstrap.css";
 import "./index.scss";
 import "./inventario.scss";
 import "./mediaQuery.scss";
 import Router from "./Routes/router";
+
 //import "./btn_botton";
 
 ReactDOM.render(
