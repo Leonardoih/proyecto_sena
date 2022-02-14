@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import "./inventario.scss";
 import "./mediaQuery.scss";
+import "./tablas.scss";
 import Router from "./Routes/router";
 
 //import "./btn_botton";
